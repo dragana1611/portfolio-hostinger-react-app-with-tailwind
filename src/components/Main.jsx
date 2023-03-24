@@ -2,9 +2,9 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const Main = (prop) => {
+const Main = () => {
   return (
-    <div id="main">
+    <div id="main" className="w-full h-screen relative">
       <img
         className="w-full h-screen object-cover object-bottom"
         src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
@@ -37,8 +37,12 @@ const Main = (prop) => {
             />
           </h2>
           <div className="flex justify-center gap-5 pt-6 max-w-[200px] w-full">
-            <FaGithub className="cursor-pointer " size={28} />
-            <FaLinkedin className="cursor-pointer " size={28} />
+            <a href="https://github.com/dragana1611" target="_blank">
+              <FaGithub className="cursor-pointer " size={28} />
+            </a>
+            <a href="https://www.linkedin.com/in/dragana-petrovic-b2059646/" target="_blank">
+              <FaLinkedin className="cursor-pointer " size={28} />
+            </a>
           </div>
         </div>
       </div>
